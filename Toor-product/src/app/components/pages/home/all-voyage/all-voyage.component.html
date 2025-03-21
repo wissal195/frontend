@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>Résultats de la recherche</h3>
+  <div *ngIf="voyages.length > 0">
+    <div *ngFor="let voyage of voyages">
+      <h4>{{ voyage.titreVoyage }}</h4>
+      <p>{{ voyage.description }}</p>
+      <p><strong>Type de voyage :</strong> {{ voyage.typeVoyage.nomTypeVoyage }}</p>
+
+      <!-- Afficher les itinéraires -->
+      <div *ngIf="itineraires[voyage.idVoyage] && itineraires[voyage.idVoyage].length > 0">
+        <h5>Itinéraires :</h5>
+        <ul>
+          <li *ngFor="let itineraire of itineraires[voyage.idVoyage]">
+            <p><strong>Destination :</strong> {{ itineraire.destinationRegionJour }}</p>
+            <p><strong>Activités :</strong> {{ itineraire.activites }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

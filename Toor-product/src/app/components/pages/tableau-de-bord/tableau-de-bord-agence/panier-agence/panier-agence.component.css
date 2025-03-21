@@ -1,0 +1,38 @@
+/* Styles pour le carrousel */
+ngb-carousel {
+  width: 100%; /* Largeur du carrousel */
+  height: 300px; /* Hauteur du carrousel (ajustez selon vos besoins) */
+  position: relative;
+  overflow: hidden; /* Cache les éléments qui dépassent */
+}
+
+/* Styles pour les slides du carrousel */
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Styles pour chaque slide */
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Animation de transition */
+}
+
+/* Affiche le slide actif */
+.carousel-item.active {
+  opacity: 1;
+}
+
+/* Styles pour les images */
+.carousel-item img {
+  width: 100%; /* Largeur de l'image */
+  height: 100%; /* Hauteur de l'image */
+  object-fit: cover; /* Ajuste l'image pour couvrir tout l'espace disponible */
+  display: block; /* Évite les espaces vides sous l'image */
+}

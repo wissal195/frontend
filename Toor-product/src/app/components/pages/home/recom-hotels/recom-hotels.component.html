@@ -1,0 +1,65 @@
+<section class="section-padding hotels-sec bg-light-white">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-heading">
+        <h3 class="text-custom-black">Recommended Voyages</h3>
+        <div class="section-description">
+          <p class="text-light-dark">
+            Explore our recommended travel packages with all the details you need.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <!-- Indicateur de chargement -->
+        <div *ngIf="isLoading" class="text-center">
+          <p>Loading voyages...</p>
+        </div>
+
+        <!-- Carrousel -->
+        <ngx-slick-carousel *ngIf="!isLoading" [config]="settings" class="hotel-slider arrow-layout-2 row">
+          <!-- Boucle sur les voyages -->
+          <div ngxSlickItem class="slide-item col-12" *ngFor="let voyage of voyages">
+            <div class="hotel-grid">
+              <div class="hotel-grid-wrapper car-grid bx-wrapper">
+                <div class="image-sec animate-img">
+                  <a routerLink="/voyage-details/{{voyage.idVoyage}}">
+                    <!-- Afficher la première image du voyage -->
+                    <img *ngIf="voyageImages[voyage.idVoyage] && voyageImages[voyage.idVoyage].length > 0"
+                         [src]="voyageImages[voyage.idVoyage][0]"
+                         class="full-width"
+                         [alt]="voyage.titreVoyage">
+                  </a>
+                </div>
+                <div class="hotel-grid-caption padding-20 bg-custom-white p-relative">
+                  <h4 class="title fs-16">
+                    <a routerLink="/voyage-details/{{voyage.idVoyage}}" class="text-custom-black">
+                      {{voyage.titreVoyage}}
+                      <small class="text-light-dark">
+                        {{voyage.typeVoyage.nomTypeVoyage}} <!-- Afficher le type de voyage -->
+                      </small>
+                    </a>
+                  </h4>
+                  <span class="price">
+                    <small>Total Price</small>
+                    ${{voyage.prix | number:'1.0-0'}} <!-- Afficher le prix -->
+                  </span>
+                  <div class="dates text-light-dark">
+                    <small>Depart: {{extractDateOnly(voyage.vol?.dateDepart)}}</small> <!-- Date de départ -->
+                    <small>Arrival: {{extractDateOnly(voyage.vol?.dateArrivee)}}</small> <!-- Date d'arrivée -->
+                  </div>
+                  <div class="action">
+                    <a routerLink="/voyage-details/{{voyage.idVoyage}}" class="btn-second btn-small">View</a>
+                    <a routerLink="/booking" class="btn-first btn-submit yellow">Book</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin de la boucle -->
+        </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+</section>

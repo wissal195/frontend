@@ -1,0 +1,26 @@
+.our-team {
+  background-image: url('../../../../../../assets/images/img_p_hotel_og_1362.jpg');/* Remplacez par le chemin de votre image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 0; /* Ajustez la valeur pour augmenter la hauteur */
+  position: relative; /* Pour positionner l'overlay */
+}
+
+.overlay-bg-black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay noir semi-transparent */
+}
+
+.section-header {
+  position: relative; /* Pour s'assurer que le contenu est au-dessus de l'overlay */
+  z-index: 1; /* Place le contenu au-dessus de l'overlay */
+}
+
+.text-custom-white {
+  color: #fff; /* Texte en blanc */
+}

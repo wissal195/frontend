@@ -1,0 +1,80 @@
+<div class="banner-tabs">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="tabs">
+          <ul ngbNav #nav="ngbNav" class="custom-flex nav nav-tabs">
+            <li [ngbNavItem]="1">
+              <a ngbNavLink>Voyages</a>
+              <ng-template ngbNavContent>
+                <div class="tab-inner">
+                  <form (ngSubmit)="onSearch()">
+                    <div class="row align-items-end"> <!-- Utilisez align-items-end pour aligner les éléments en bas -->
+                      <!-- Destination -->
+                      <div class="col-lg-3 col-md-6">
+                        <div class="form-group">
+                          <label class="fs-14 text-custom-black fw-500">Destination</label>
+                          <input
+                            type="text"
+                            [(ngModel)]="searchCriteria.destination"
+                            name="destination"
+                            class="form-control form-control-custom"
+                            placeholder="Entrez une destination"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- Date de départ -->
+                      <div class="col-lg-3 col-md-6">
+                        <div class="form-group">
+                          <label class="fs-14 text-custom-black fw-500">Date de départ</label>
+                          <div class="input-group group-form">
+                            <input
+                              type="date"
+                              [(ngModel)]="searchCriteria.departureDate"
+                              name="departureDate"
+                              class="form-control form-control-custom"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Type de voyage -->
+                      <div class="col-lg-3 col-md-6">
+                        <div class="form-group">
+                          <label class="fs-14 text-custom-black fw-500">Type de voyage</label>
+                          <div class="group-form">
+                            <select
+                              [(ngModel)]="searchCriteria.tripType"
+                              name="tripType"
+                              class="custom-select form-control form-control-custom"
+                            >
+                              <option value="">Sélectionnez un type</option>
+                              <option *ngFor="let type of tripTypes" [value]="type.nomTypeVoyage">
+                                {{ type.nomTypeVoyage }}
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Bouton Rechercher -->
+                      <div class="col-lg-3 col-md-6">
+                        <div class="form-group">
+                          <button type="submit" class="btn-first btn-submit full-width btn-height">
+                            Rechercher
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </ng-template>
+            </li>
+          </ul>
+          <div [ngbNavOutlet]="nav" class="bg-custom-white bx-wrapper padding-20"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

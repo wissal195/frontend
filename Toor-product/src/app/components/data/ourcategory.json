@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "title":"Asia",
+        "image":"assets/images/asia.jpg",
+        "text":"1150 Offers",
+        "link":"/flight-grid"
+    },
+    {
+        "id":2,
+        "title":"Europe",
+        "image":"assets/images/europe2.jpg",
+        "text":"1100 Locations",
+        "link":"/cruise-grid"
+    },
+    {
+        "id":3,
+        "title":"South America",
+        "image":"assets/images/titicaca-lake-people.webp",
+        "text":"1250 Locations",
+        "link":"/hotel-grid"
+    },
+    {
+        "id":4,
+        "title":"Africa",
+        "image":"assets/images/safaris-en-afrique-1.jpg",
+        "text":"1550 Locations",
+        "link":"/car-grid"
+    }
+]

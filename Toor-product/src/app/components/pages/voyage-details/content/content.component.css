@@ -1,0 +1,490 @@
+.listing-meta-sec {
+  padding: 20px;
+  background-color: transparent; /* Assure-toi qu'il n'y a pas de fond */
+  border-radius: 10px;
+}
+
+.listing-meta-sec h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.listing-meta-sec p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Ajout de background transparent pour éliminer le gris d'arrière-plan */
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  color: #333;
+  }
+
+
+
+.icon-box i {
+  font-size: 17px;
+  color: #007bff;
+}
+
+/* Si tu utilises des classes spécifiques comme .text-light-dark */
+.text-light-dark {
+  background-color: transparent !important; /* Forcer un fond transparent si appliqué globalement */
+}
+.icon-box span {
+  font-family: "Poppins", sans-serif; /* Police élégante */
+  letter-spacing: 0.5px;
+}
+
+
+
+
+/* Style général pour les sections de services */
+.itinerary-details {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-section {
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.service-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.service-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.service-list li {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+  padding-left: 24px; /* Espace pour l'icône */
+  position: relative;
+}
+
+.service-list li::before {
+  content: '•';
+  color: black; /* Couleur de la puce */
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+.services-section, .transports-section, .nourriture-section {
+  margin-bottom: 20px;
+}
+
+.included-icon {
+
+  margin-right: 5px;
+}
+.services-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.included-icon {
+  color: green;
+
+}
+
+.excluded-icon {
+  color: red;
+
+}
+
+.included-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.included-list li {
+  margin-bottom: 10px;
+}
+
+.included-list strong {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+
+
+
+.services-section {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.services-section h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.services-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Style des icônes avec une bordure colorée mais sans fond */
+.category-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Réduction de la taille */
+    height: 30px;
+    border-radius: 50%;
+    font-size: 14px; /* Taille de l’icône réduite */
+    margin-right: 10px;
+
+}
+
+
+
+/* Style des panneaux accordéon */
+.custom-accordion .card {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* En-tête des panels en blanc */
+.custom-accordion .card-header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Effet au survol */
+.custom-accordion .card-header:hover {
+    background: red;
+}
+
+/* Contenu des panels */
+.custom-accordion .card-body {
+    background: #fff;
+    padding: 15px;
+    border-left: 3px solid ; /* Bordure fine verte */
+}
+
+/* Bordure rouge pour les non inclus */
+.excluded-section .custom-accordion .card-body {
+    border-left-color: #dc3545;
+}
+
+/* Liste des services */
+.included-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.included-list li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+
+
+
+.quick-quote {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.travel-details {
+  margin-bottom: 20px;
+}
+
+.date-display, .price-display {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.date-display i {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.travel-date {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.price-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+
+.price-value {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2d3e52;
+}
+.col-lg-4{
+top : 35px;}
+
+
+
+
+.voyage-title h2 {
+
+
+  color: #2d3e52; /* Couleur du texte */
+
+
+}
+
+
+
+
+
+/* Styles pour les icônes pour les rendre simples et sans fond */
+.contact-info-box i {
+  background-color: transparent !important; /* Assurer qu'il n'y ait pas de fond */
+  color: #fff !important; /* Assurer que l'icône soit en couleur gris foncé */
+  border: none !important; /* Enlever toute bordure */
+}
+
+
+
+
+.contact-info-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color:#212529;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-info-box i {
+    font-size: 28px;
+    color: red; /* Couleur des icônes */
+}
+
+.contact-info-box h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info-box i {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+/* Style général pour la section de réservation */
+/* Style général de la section de réservation */
+.reservation-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.reservation-box {
+  display: flex;
+  flex-direction: column; /* Empile les éléments verticalement */
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 700px; /* Augmenter la largeur pour plus d'espace */
+}
+
+/* Section des dates */
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.date-info {
+  display: flex;
+  align-items: center;
+}
+
+.start-date, .end-date {
+  font-size: 16px; /* Augmenter la taille de la police pour plus de lisibilité */
+  font-weight: bold;
+  color: #333;
+}
+
+.arrow {
+  font-size: 18px;
+  color: #007BFF;
+  margin: 0 15px; /* Espacement plus large autour de la flèche */
+}
+
+.price-container {
+  margin-left: auto;
+}
+
+.price {
+  font-size: 24px; /* Augmenter la taille du prix */
+  font-weight: bold;
+  color: #333;
+}
+
+/* Informations supplémentaires sous les dates */
+.bottom-info {
+  font-size: 14px;
+  color: #777;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.language {
+  font-size: 14px;
+  margin-bottom: 8px; /* Augmenter l'espacement entre les informations */
+}
+
+.on-demand {
+  color: #007BFF; /* Bleu pour "sur demande" */
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.almost-gone {
+  font-size: 14px;
+  color: red; /* Mettre "Presque épuisé" en rouge */
+}
+
+/* Bouton */
+.confirm-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Espacement supplémentaire avant le bouton */
+}
+
+.btn-confirm {
+  padding: 12px 25px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px; /* Augmenter la taille du texte */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-confirm:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+.img-thumbnail {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.1); /* Effet de zoom au survol */
+}
+ .image-fit {
+   width: 100%; /* Prend toute la largeur du cadre */
+   height: 500px; /* Ajustez la hauteur selon vos besoins */
+   object-fit: cover; /* Remplit le cadre tout en conservant l'aspect ratio */
+ }
+
+.listing-details-inner .listing-meta-sec .amenities .icon-box i {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    float: left;
+    background: #fff;
+    color:  #01b7f2;
+    height: 42px;
+    font-size: 2em;
+    margin-right: 15px;
+}

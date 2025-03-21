@@ -1,0 +1,20 @@
+.image-upload-container {
+  margin-bottom: 10px;
+}
+
+.image-upload-container input[type="file"] {
+  margin-bottom: 5px;
+}
+
+.image-upload-container button.add-more {
+  margin-left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.image-upload-container button.add-more:hover {
+  background-color: #45a049;
+}

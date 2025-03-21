@@ -1,0 +1,8 @@
+
+
+.image-sec img {
+  width: 100%;
+  height: 300px; /* Hauteur fixe pour les images */
+  object-fit: cover; /* Redimensionner l'image pour couvrir la case */
+  border-radius: 8px; /* Optionnel : arrondir les coins */
+}
